@@ -1,0 +1,79 @@
+$rose: rgb(76 5 25);
+$rose_light: rgb(159 18 57);
+$hoverLink: rgb(136 19 55);
+$black: #151317;
+$gray: #808185;
+$gray_light: rgb(241 245 249);
+$gray_dark: rgb(51 65 85);
+$red: #ff6161;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  color: $black;
+  background-color: $gray_light;
+}
+
+h1 {
+  font-size: 4rem;
+
+  @media screen and (max-width: 1280px) {
+    font-size: 3.5rem;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 2.5rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 2rem;
+  }
+}
+
+h2 {
+  font-size: 1.25rem;
+
+  @media screen and (max-width: 767px) {
+    font-size: 1.1rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 1rem;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: inherit;
+}
+a:hover {
+  scale: 1.04;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  transition-delay: 3600s;
+}
+
+input:focus {
+  outline: none;
+}

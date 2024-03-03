@@ -1,0 +1,35 @@
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 2rem 0;
+  gap: 0.5rem;
+
+  @media screen and (max-width: 450px) {
+    gap: 0.2rem;
+  }
+}
+
+.ellipsis-item, .page-next, .page-prev {
+  height: 38px;
+  padding: 0 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: inherit;
+  color: $rose;
+
+  @media screen and (max-width: 450px) {
+    padding: 0 0.4rem;
+    font-weight: 500;
+  }
+}
+
+.page-next, .page-prev {
+  cursor: pointer;
+}
+
+.page-next:hover, .page-prev:hover  {
+    color: $hoverLink;
+    transform: scale(1.01, 1.01);
+    transition: all 0.3s ease;
+}

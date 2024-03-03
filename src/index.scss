@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './base-style.scss';
+@import './common.scss';
+@import './components/PageNumbersSection/PageNumbersSection.scss';
+@import './components/SideBar/SideBar.scss';
